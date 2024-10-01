@@ -1,3 +1,5 @@
+# demo-ci-terraform
+
 ## Remote State Management
 
 This project uses AWS S3 for remote state management along with DynamoDB for state locking to ensure a consistent and reliable infrastructure deployment.
@@ -51,4 +53,4 @@ This repository provides the infrastructure code to deploy an Nginx application 
 
 3. **Trigger Deployment**:
    - The pipeline will automatically apply changes upon merge to the `master` branch for production, or the relevant environment branches.
-# demo-ci-cd-terraform
+
