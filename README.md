@@ -37,7 +37,7 @@ This repository provides the infrastructure code to deploy an Nginx application 
 
 3. **GitLab CI Pipeline**:
    - When you create a merge request, the pipeline runs `terraform plan` for review.
-   - Merging to `master` will trigger the `terraform apply` for the production environment.
+   - Merging to `main` will trigger the `terraform apply` for the production environment.
    - Other environment branches (`dev`, `staging`) are similarly handled.
 
 ## Usage
@@ -49,8 +49,8 @@ This repository provides the infrastructure code to deploy an Nginx application 
    - Use separate branches for each environment:
      - `dev`: Development environment.
      - `staging`: Staging environment.
-     - `master`: Production environment.
+     - `main`: Production environment.
 
 3. **Trigger Deployment**:
-   - The pipeline will automatically apply changes upon merge to the `master` branch for production, or the relevant environment branches.
+   - The pipeline will automatically apply changes upon merge to the `main` branch for production, or the relevant environment branches.
 
