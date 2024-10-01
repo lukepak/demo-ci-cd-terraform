@@ -1,4 +1,4 @@
-git clone https://github.com/lukepak/kiemnd-sun terraform-sunprovider "aws" {
+provider "aws" {
   region = var.aws_region
 }
 

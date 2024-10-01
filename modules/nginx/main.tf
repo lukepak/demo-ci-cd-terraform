@@ -1,4 +1,4 @@
-git clone https://github.com/lukepak/kiemnd-sun terraform-sunprovider "kubernetes" {
+provider "kubernetes" {
   host                   = var.cluster_endpoint
   cluster_ca_certificate = base64decode(var.cluster_certificate)
   token                  = var.cluster_token
