@@ -7,7 +7,7 @@ This project uses AWS S3 for remote state management along with DynamoDB for sta
 ### Setting Up Remote State
 
 1. **Create S3 Bucket and DynamoDB Table**:
-   - The S3 bucket and DynamoDB table can be created using the Terraform script located in the `infrastructure` directory.
+   - The S3 bucket and DynamoDB table can be created using the Terraform script located in the `backend` directory.
 
    ```bash
    cd backend
